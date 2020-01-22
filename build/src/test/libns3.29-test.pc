@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3.29
+
+Name: libns3-test
+Description: ns-3 module ns3-test
+Version: 3.29
+Libs: -L${libdir} -Wl,-Bdynamic -lns3.29-test
+Cflags: -I${includedir}
+Requires: libns3.29-applications libns3.29-bridge libns3.29-config-store libns3.29-csma libns3.29-csma-layout libns3.29-dsr libns3.29-flow-monitor libns3.29-internet libns3.29-lr-wpan libns3.29-lte libns3.29-mesh libns3.29-mobility libns3.29-olsr libns3.29-point-to-point libns3.29-sixlowpan libns3.29-stats libns3.29-uan libns3.29-wifi libns3.29-internet-apps libns3.29-point-to-point-layout libns3.29-traffic-control
